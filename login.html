@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+    <script>
+
+        function login(){
+            alert("you are logged in")
+            location.replace("http://127.0.0.1:5500/login.html")
+        };
+    </script>
+        <script>
+        function register(){
+            location.replace("http://127.0.0.1:5500/register.html")
+        };
+    </script>
+    <script>
+     function button(){
+        alert("you are logged in")
+        location.replace("http://127.0.0.1:5500/gamespage.html")
+    };
+    </script>
+    </head>
+<header class="Head">
+
+    <img src ="../Images for website/LOGO.PNG"  height="50" width="50">
+<nav id="nav">
+    <a href="./index.html">Home</a>
+    <a href="./aboutus.html">about us</a>
+    <a href="./contactus.html">contact us</a>
+    <a href="./gamespage.html">Games</a>
+    <a href="./bootstrap.html">Bootstrap</a>
+    <button onclick="login()" id="loginButton" class="button2">Log in</button>
+    <button onclick="register()" id="registerButton" class="button1">Register</button>
+    </nav>
+</header> 
+    <br>
+
+<body>
+    <div class="Wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+
+                <div class="input-box">
+                    <input type="password"
+                      placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+
+                <button onclick="button()" id="loginButton">Log in</button>
+            </div>
+            <div class="register-link">
+                <p>Don't have an account?
+                <a href="./register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

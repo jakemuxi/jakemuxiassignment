@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="Stylesheet" href="./style.css">
+    <script src="script.js"></script>
+</script>
+<script src="script.js"></script>
+<script>
+function login(){
+
+    location.replace("http://127.0.0.1:5500/login.html")
+};
+</script>
+<script>
+function register(){
+    location.replace("http://127.0.0.1:5500/register.html")
+};
+</script>
+</head>
+<header id="Head">
+    <img src="./Images for website/LOGO.PNG" height="50" width="50">
+    
+    <nav id="nav">
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">about us</a>
+        <a href="./contactus.html">contact us</a>
+        <a href="./gamespage.html">Games</a>
+        <a href="./bootstrap.html">Bootstrap</a>
+        <button onclick="login()" id="loginButton" class="button2">Log in</button>
+        <button onclick="register()" id="registerButton" class="button1">register</button>
+        
+    </nav>
+    </header>
+<body>
+    
+ 
+
+<div id="Contactinfo">
+    <h1>Contact Us</h1>   
+<label for="name"><b>Name</b></label>
+<input type="text" name="name" placeholder="Name">
+<br>
+<label for="Email"><b>Email</b></label>
+<input type="text" Email="Email" placeholder="Email">
+<br>
+<label for="Message"><b>Message</b></label>
+<textarea placeholder="Message" name="formMessage" required></textarea>
+</div>
+<br>
+<button id="SendMessage">Send youre message</button>
+
+
+
+</body>
+</html>
